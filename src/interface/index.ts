@@ -40,6 +40,10 @@ export interface IsingleCoin {
     setHidden:React.Dispatch<React.SetStateAction<boolean>>
     
 }
+export  interface IPagination {
+    ceilnumber:number,
+    setlimit:React.Dispatch<React.SetStateAction<ILimit>>
+}
 
 
 

@@ -14,7 +14,7 @@ export const Search = ({
     return (
         <form className="row">
             <div className="col-md-6 mb-5">
-                <input type="text" className="form-control" id="inputSeatch" placeholder="Enter Symbol..." onChange={(e) => handleChange(e)} />
+                <input type="text" className="form-control" id="inputSearch" placeholder="Enter Symbol..." onChange={(e) => handleChange(e)} />
             </div>
 
         </form>

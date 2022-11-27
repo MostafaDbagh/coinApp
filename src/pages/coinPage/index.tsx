@@ -78,7 +78,7 @@ import {ICoin,ILimit} from '../../interface'
       ))}
          </div>
          
-         {coins.length > numberOfCoinEachPage && <Pagination setlimit={setLimit} limit={limit} ceilnumber={paginationCeilNumber} />}
+         {coins.length > numberOfCoinEachPage && <Pagination setlimit={setLimit} ceilnumber={paginationCeilNumber} />}
          <ModalCantainer hidden={hidden} sethidden={setHidden}/>
      
     </div>

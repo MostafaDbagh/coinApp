@@ -2,9 +2,10 @@ import axios  from "axios";
 
 
 
+const {REACT_APP_API_URL}=process.env;
 
-export const getCoinsApi :any = async ()=>{
-    const res =  await axios.get('https://api2.binance.com/api/v3/ticker/24hr');
+export const getCoinsApi = async ()=>{
+    const res =  await axios.get(`${REACT_APP_API_URL}`);
   return res.data;
 }
 

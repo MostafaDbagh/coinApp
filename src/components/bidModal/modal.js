@@ -20,7 +20,7 @@ export const BidForm = ({ formik, hidden, setHidden }) => {
 
               />
             </div>
-            {formik.errors.email && formik.touched.email ? <p className="error">error message to show </p> : ""}
+            {formik.errors.bidPrice && formik.touched.bidPrice ? <p className="error">error message to show </p> : ""}
             <div className="input-container">
 
               <input
@@ -31,7 +31,7 @@ export const BidForm = ({ formik, hidden, setHidden }) => {
                 onChange={formik.handleChange}
               />
             </div>
-            {formik.errors.password && formik.touched.password ? <p className="error">password not correct </p> : ""}
+            {formik.errors.bidQuantity && formik.touched.bidQuantity ? <p className="error">error message to show </p> : ""}
 
           </div>
           <div className="d-flex my-4">
@@ -46,7 +46,7 @@ export const BidForm = ({ formik, hidden, setHidden }) => {
 
               />
             </div>
-            {formik.errors.email && formik.touched.email ? <p className="error">email not correct</p> : ""}
+            {formik.errors.bidPlace && formik.touched.bidPlace ? <p className="error">error message to show </p> : ""}
             <div className="input-container">
 
               <input
@@ -57,7 +57,7 @@ export const BidForm = ({ formik, hidden, setHidden }) => {
                 onChange={formik.handleChange}
               />
             </div>
-            {formik.errors.password && formik.touched.password ? <p className="error">password not correct </p> : ""}
+            {formik.errors.bidAvailableQuantity && formik.touched.bidAvailableQuantity ? <p className="error">error message to show</p> : ""}
 
           </div>
           <div className="d-flex justify-content-end mx-2">
