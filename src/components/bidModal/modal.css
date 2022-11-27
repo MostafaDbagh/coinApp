@@ -1,0 +1,29 @@
+.modal-container{
+     position: absolute;
+     top: 0;
+     left: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(220,220,220,0.6);
+   margin: auto;
+   z-index: 999;
+
+}
+.modal-form{
+    height: 270px;
+    width: 44%;
+    border-radius: 5px;
+    margin: 35% auto 0}
+.input-container{
+    display: flex;
+    
+}
+.input-container >input{
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    padding:6px 12px 6px;
+    margin: 4px 12px;
+    outline: 0;
+    border: 0;
+}
