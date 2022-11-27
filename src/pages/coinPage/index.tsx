@@ -15,7 +15,7 @@ import {ICoin,ILimit} from '../../interface'
   const [error, setError] = useState<string>('');
   const [hidden,setHidden] = useState<boolean>(true);
 
-  const [paginationCeilNumber, setPaginationCeilNumber] = useState<number>(0)
+  const [paginationCeilNumber, setPaginationCeilNumber] = useState<number>(0);
   const [limit, setLimit] = useState<ILimit>({
     start: 0,
     end: 20
@@ -26,7 +26,6 @@ import {ICoin,ILimit} from '../../interface'
     try {
       setLoading(true)
       const data = await getCoinsApi();
-      console.log(data)
       setCoins(data);
       setBackup(data)
       setPaginationCeilNumber(Math.ceil(data.length / numberOfCoinEachPage))

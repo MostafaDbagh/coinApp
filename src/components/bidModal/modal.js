@@ -7,7 +7,7 @@ export const BidForm = ({ formik, hidden, setHidden }) => {
       <div className="sfsf">
       <div className="modal-form bg-secondary">
         <button onClick={() => { setHidden(true) }} style={{ fontSize: '22px', width: "40px", height: '38px', position: "relative", right: '70px', margin: '12px 0 0 700px', padding: "4px 8px", border: 0, background: '0' }}>X</button>
-        <form onSubmit={() => console.log(formik.handleSubmit)} >
+        <form onSubmit={formik.handleSubmit} >
           <div className="d-flex mt-3">
             <div className="input-container">
 
